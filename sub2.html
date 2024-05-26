@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>시집책방</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!--fonts-->
+    <!--font-family:  "SUITE"-->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <!--font-family: 'Hakgyoansim Mulgyeol'; normal, bold-->
+    <link href="./fonts/stylesheet.css">
+
+    <!--토클테이블-->
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/toggletable.js"></script>
+
+    <!--calender css-->
+    <link rel="stylesheet" href="./css/hotel-datepicker.css">
+    <!--my CSS-->
+    <link rel="stylesheet" href="./css/style_sub2.css">
+</head>
+<body>
+
+    <header>
+        <div class="header_inner">
+                <h1><img src="./images/header_logo.png" alt="시집책방로고"></h1>
+                <ul class="gnb">
+                        <li><a href="./index.html" >시집책방</a></li>
+                        <li><a href="./sub2.html" class="on">북스테이</a></li>
+                        <li><a href="./sub4_bookstore.html">북스토어</a></li>
+                        <li><a href="./sub3_bookclub.html">북클럽</a></li>
+                        <li><a href="./sub1.html">스토리북</a></li>
+                </ul><!--gnb-->
+                <div class="search_box">
+                    <form action="#">
+                        <input type="search" placeholder="SEARCH...">
+                    </form>
+                    <a href="./sub4_bookstore.html"><img src="./images/search_icon2.png" alt=""></a>
+                </div>
+        </div><!--E : header_inner-->
+    </header>
+    
+    <div id="mainbanner">
+        <!-- Swiper -->
+        <div class="swiper mainswiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/sub2/banner_img1.png" /></div>
+                <div class="swiper-slide"><img src="./images/sub2/banner_img2.png" /></div>
+                <div class="swiper-slide"><img src="./images/sub2/banner_img3.png" /></div>
+            </div>
+        </div>
+
+        <div class="inputcontainer"> 
+            <div class="leftinputs"><!--display, border-radius,bgc:fefaf3--> 
+                <div class="calender">
+                    <p>예약일자</p>
+                    <div class="demo__input" id="demo1-input-parent">
+                    <input type="text" value="">
+                </div></div>
+    
+                <div class="selectBox">
+                    <select name="rooms" class="select">
+                      <option disabled selected> ROOMS </option>
+                      <option value="apple" class="option">single</option>
+                      <option value="orange">bunk</option>
+                      <option value="grape">double</option>
+                      <option value="melon">twin</option>
+                    </select>
+                </div><!--E : selectBOx-->
+                <div class="selectBox">
+                    <select name="인원" class="select">
+                      <option disabled selected> NUMBER</option>
+                      <option value="apple" class="option">1</option>
+                      <option value="orange">2</option>
+                    </select>
+                </div><!--E : selectBOx-->
+            </div><!--leftinputs-->
+            <div class="rightbtn">
+                <p>예약하기</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="rooms_info">
+        <div class="title auto">
+            <img src="./images/title_icon_orange.png" alt="">
+            <h1>ROOMS INFO</h1> 
+            <img src="./images/title_icon_orange.png" alt="">
+        </div>
+        <div class="info_container">
+            <div class="notice">
+                <div>
+                    <p>ROOMS INFO</p>
+                    <p>OPEN IT</p>
+                </div>
+                <ul>
+        
+                    <li>
+                        <div class="notice_title">
+                            <div class="title_in">STAY SINGLE</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div><!--사용할 토글버튼 이미지 파일 src 넣어준다.-->
+                        </div>
+                        <div class="text_info">
+                            <div class="text_info_inner">
+                                <div class="text_left">
+                                    <b>1인실</b><br>
+                                    FURNITURE <br>
+                                    FACILITY <br>
+                                    ACCESSORY <br>
+                                    PRICE <br>
+                                </div>
+                                <div class="text_right">
+                                    <br>
+                                    테이블1, 의자1, 침대1, 옷장1, 수납장1 <br>
+                                    화장실1, 샤워실1 <br>
+                                    문진, 스탠드, 냉난방기, 스피커, WIFI <br>
+                                    1박에 6만 5천원부터
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notice_title">
+                            <div class="title_in">STAY BUNK</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div><!--사용할 토글버튼 이미지 파일 src 넣어준다.-->
+                        </div>
+                        <div class="text_info">
+                            <div class="text_info_inner">
+                            <div class="text_left">
+                                <b>1-6인실</b><br>
+                                FURNITURE <br>
+                                FACILITY <br>
+                                ACCESSORY <br>
+                                PRICE <br>
+                            </div>
+                            <div class="text_right">
+                                <br>
+                                테이블1, 의자6, 벙커침대6, 옷장3, 수납장6 <br>
+                                화장실2, 샤워실2, 미니테라스 <br>
+                                스탠드, 냉난방기, WIFI <br>
+                                1박에 3만 5천원부터
+                            </div>
+                            </div><!--text_info_inner-->
+                        </div>
+                    </li>                
+                    <li class="turn">
+                        <div class="notice_title">
+                            <div class="title_in">STAY DOUBLE</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div><!--사용할 토글버튼 이미지 파일 src 넣어준다.-->
+                        </div>
+                        <div class="text_info">
+                            <div class="text_info_inner">
+                            <div class="text_left">
+                                <b>1-2인실</b><br>
+                                FURNITURE <br>
+                                FACILITY <br>
+                                ACCESSORY <br>
+                                PRICE <br>
+                            </div>
+                            <div class="text_right">
+                                <br>
+                                테이블1, 의자2, 침대1, 옷장1, 수납장1 <br>
+                                화장실1, 샤워실1 <br>
+                                문진, 스탠드, 냉난방기, 스피커, WIFI <br>
+                                1박에 18만원부터
+                            </div>
+                        </div><!--text_info_inner-->
+                        </div>
+                    </li>                
+                    <li>
+                        <div class="notice_title">
+                            <div class="title_in">STAY TWIN</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div><!--사용할 토글버튼 이미지 파일 src 넣어준다.-->
+                        </div>
+                        <div class="text_info">
+                            <div class="text_info_inner">
+                                <div class="text_left">
+                                    <b>2인실</b><br>
+                                    FURNITURE <br>
+                                    FACILITY <br>
+                                    ACCESSORY <br>
+                                    PRICE <br>
+                                </div>
+                                <div class="text_right">
+                                    <br>
+                                    테이블1, 의자1, 침대2, 옷장1, 수납장1 <br>
+                                    화장실1, 샤워실1 <br>
+                                    문진, 스탠드, 냉난방기, 스피커, WIFI <br>
+                                    1박에 21만원부터
+                                </div>
+                            </div><!--text_info_inner-->
+                        </div>
+                    </li>
+                </ul>
+            </div><!--notice-->
+            <div class="rightinfo"><img src="./images/sub2/info_img1.jpg" alt="숙소이미지"></div>
+        </div>
+    </div>
+
+    <div id="preview">
+        <div class="title"><!--.title-->
+            <img src="./images/title_icon_orange.png" alt="">
+            <h1>PREVIEW</h1> 
+            <img src="./images/title_icon_orange.png" alt="">
+        </div><!--.title-->
+        
+        <div id="imgloop"><!--overflow hidden, width 100%설정해야 함.-->
+            <div class="imgwrapper">
+                <div class="slide">
+                    <div><img src="./images/sub2/pre_img1.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img2.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img3.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img5.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img6.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img7.jpg" alt="숙소내부"></div>
+                </div><!--slide-->
+                <div class="slide">
+                    <div><img src="./images/sub2/pre_img1.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img2.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img3.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img5.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img6.jpg" alt="숙소내부"></div>
+                    <div><img src="./images/sub2/pre_img7.jpg" alt="숙소내부"></div>
+                </div><!--slide-->
+            </div><!--textwrapper-->
+        </div><!--#textloop-->
+    </div><!--E : preview-->
+
+
+    <div id="doors">
+        <img src="./images/sub2/door_img.png" alt="">
+        <p class="a"><a href="#mainbanner">북스테이 예약하기</a></p>
+    </div>
+    <div id="special_offers">
+        <div class="title"><!--.title-->
+            <img src="./images/title_icon_orange.png" alt="">
+            <h1>SPECIAL OFFERS</h1> 
+            <img src="./images/title_icon_orange.png" alt="">
+        </div><!--.title-->
+
+        <div class="offers_container">
+            <div class="rightinfo"><img src="./images/sub2/specialoffers_img1.jpg" alt="숙소이미지"></div>
+            <div class="notice">
+                
+                <div>
+                    <p>SPECIAL OFFERS</p>
+                    <p>OPEN IT</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="notice_title ">
+                            <div class="title_in ">LIBRARY</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div>
+                        </div>
+                        <div class="text_info offerbg1">
+                            
+                                시집책방은 24시간 도서관을 운영하고 있습니다. <br>
+                                언제든 새로운 책을 빌리세요.                                 
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notice_title">
+                            <div class="title_in">
+                                WORKTOOLS FOR RENT
+                            </div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div>
+                        </div>
+                        <div class="text_info offerbg2">
+                                워크스페이스로 이용에 불편함이 없도록  <br>
+                                업무효율성을 높일 장비들을 준비했습니다. <br>
+                                <b>device</b> : 노트북, 팩스, 복사기, 데스트탑 <br>
+                                <b>tools</b> : 독서대, 독서등, 필기구 등     
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notice_title">
+                            <div class="title_in">LAUNDRY ROOM</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div>
+                        </div>
+                        <div class="text_info offerbg3">
+                                세탁기와 건조기, 세제가 있는
+                                셀프 런드리룸입니다. <br>
+                                <b>이용가능시간</b> 8 :00 - 20:00
+                        </div>
+                    </li>
+                    <li >
+                        <div class="notice_title">
+                            <div class="title_in">SHARED KITCHEN</div>
+                            <div class="plus"><img src="./images/plus.png" alt="plus"></div>
+                        </div>
+                        <div class="text_info offerbg4">
+                                토스터기, 커피포트, 간단한 조리기구가 <br>
+                                준비된 공유키친에서 요리가 가능하고<br>
+                                음식을 드실 공간을 마련하였습니다. <br>
+                                <b>이용시간</b>    6:00 ~ 22:00
+                        </div>
+                    </li>
+                </ul>
+            </div><!--notice-->
+            
+        </div>
+    </div>
+
+    <div id="textloop"><!--overflow hidden, width 100%설정해야 함.-->
+        <div class="textwrapper"><!--flex(슬라이드2개), width(슬라이드 2개), animation(@keyframes textloop)-->
+            <div class="slide"><!-- flex, justifycontent: spacearound, width, fontsize 등-->
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+            </div><!--slide-->
+            <div class="slide">
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="집모양"></p>
+                <p>book·stay·store</p>
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+            </div><!--slide-->
+        </div><!--textwrapper-->
+    </div><!--#textloop-->
+
+
+
+    <div id="location"> <!--bg:#012840-->
+        <div class="title auto">
+            <img src="./images/title_icon_orange.png" alt="">
+            <h1>오시는 길</h1> 
+            <img src="./images/title_icon_orange.png" alt="">
+        </div>
+        <div class="location_contents">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.143416478801!2d129.02488597623903!3d35.10312956151328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e99fb4f35065%3A0x9a5170540e170c80!2z67O07IiY64-Z7LGF67Cp6rOo66qp!5e0!3m2!1sko!2skr!4v1713429433732!5m2!1sko!2skr" width="640" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div>
+                <ul>
+                    <li><img src="./images/location1.png" alt=""></li>
+                    <li><img src="./images/location2.jpg" alt=""></li>
+                    <li class="navi"><img src="./images/location3.jpg" alt="">
+                        <p class="a"> <a href="">빠른 길 찾기</a></p>
+                    </li>
+                </ul>
+                
+            </div>
+            <p class="animation"><img src="./images/rotate_img.png" alt=""></p>
+        </div>
+
+    </div><!--location-->
+
+
+    <div id="footer">
+        <h1><img src="./images/footer_logo.png" alt=""></h1>
+        <p>북스테이 시집책방 │ bookstay : POETRY</p>
+        <p>tel : 051-621-7117  │  e-mail : te03085@naver.com  │ 부산광역시 중구 대청로 7길</p>
+        <p>  37-55, YONGDUSAN-GIL , JUNG-GU, BUSAN, REPUBLIC OF KOREA</p> 
+    </div>
+
+    <div id="fixer">
+        <ul>
+            <li><a href="#"><img src="./images/fixer_img.png" alt="topicon"></a></li>
+            <li><a href="./sub2.html" class="list">북스테이</a></li>
+            <li><a href="./sub3_bookclub.html" class="list">북클럽</a></li>
+            <li><a href="./sub4_bookstore.html" class="list">북스토어</a></li>
+        </ul>
+    </div>
+
+
+    <!--S : 스크롤 js-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 1200) {//아이콘이 나타나길 원하는 높이를 설정하세요
+                $('#fixer').fadeIn();//
+            } else {
+                $('#fixer').fadeOut();//
+            }
+        });
+    </script>
+    <!--E : 스크롤 JS -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+            var swiper = new Swiper(".mainswiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            });
+    </script>
+
+    <!--체크인.아웃 js-->
+    <script type="text/javascript" src="./js/fecha.min.js"></script>
+    <script type="text/javascript" src="./js/hotel-datepicker.js"></script>
+    <script type="text/javascript">
+    (function () {
+        // ------------------- DEMO 1 ------------------- //
+
+        var today = new Date();
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        var input1 = document.querySelector('#demo1-input-parent input');
+        input1.value = fecha.format(today, 'YYYY-MM-DD') + ' - ' + fecha.format(tomorrow, 'YYYY-MM-DD');
+
+        var demo1 = new HotelDatepicker(input1);
+    })();
+    </script>
+    
+</body>
+</html>

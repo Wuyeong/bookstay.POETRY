@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Hakgyoansim Mulgyeol';
+    src: url('TTHakgyoansimMulgyeolR.eot');
+    src: url('TTHakgyoansimMulgyeolR.eot?#iefix') format('embedded-opentype'),
+        url('TTHakgyoansimMulgyeolR.woff2') format('woff2'),
+        url('TTHakgyoansimMulgyeolR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hakgyoansim Mulgyeol';
+    src: url('TTHakgyoansimMulgyeolB.eot');
+    src: url('TTHakgyoansimMulgyeolB.eot?#iefix') format('embedded-opentype'),
+        url('TTHakgyoansimMulgyeolB.woff2') format('woff2'),
+        url('TTHakgyoansimMulgyeolB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+

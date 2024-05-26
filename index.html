@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>시집책방</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!--js  <script src="./js/jquery-3.7.1.min.js"></script> -->
+   
+
+    <!--fonts-->
+    <!--font-family:  "SUITE"-->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <!--font-family: 'Hakgyoansim Mulgyeol'; normal, bold-->
+    <link href="./fonts/stylesheet.css">
+
+
+    <!--my CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header_inner">
+                <h1><a href="./index.html"><img src="./images/header_logo.png" alt="시집책방로고"></a></h1>
+                <ul class="gnb">
+                        <li><a href="./index.html" class="on">시집책방</a></li>
+                        <li><a href="./sub2.html">북스테이</a></li>
+                        <li><a href="./sub4_bookstore.html">북스토어</a></li>
+                        <li><a href="./sub3_bookclub.html">북클럽</a></li>
+                        <li><a href="./sub1.html">스토리북</a></li>
+                </ul><!--gnb-->
+                <div class="search_box">
+                    <form action="#">
+                        <input type="search" placeholder="SEARCH...">
+                    </form>
+                    <a href="./sub4_bookstore.html"><img src="./images/search_icon2.png" alt="검색아이콘"></a>
+                </div>
+        </div><!--E : header_inner-->
+    </header>
+    
+
+    <div class="banner_outer">
+        <div class="swiper-button-next out_btn_next"></div>
+        <div class="swiper-button-prev out_btn_prev"></div>
+            
+        <div id="banner">
+            <!-- Swiper -->
+            <div class="swiper bannerwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner_img1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner_img2.png" />
+                    </div>
+                </div>
+            </div>
+        
+        </div><!--banner-->
+    </div><!--banner_outer-->
+
+    <div id="tags">
+        <ul>
+            <li><img src="./images/banner_icon1.png" alt="시계아이콘"> AM 08:00 ~ PM 10:00</li>
+            <li><img src="./images/banner_icon2.png" alt="주소아이콘"> 부산광역시 중구 보수동1가 </li>
+            <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="./images/banner_icon3.png" alt="네이버 블로그"></a>
+                <a href="https://www.instagram.com/"><img src="./images/banner_icon4.png" alt="인스타그램"></a>
+                <a href="https://www.facebook.com/?locale=ko_KR"><img src="./images/banner_icon5.png" alt="페이스북"></a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id="contents">
+        <ul class="imgcontents"><!--flex, height : -->
+            <li><a href="./sub2.html">
+                <img src="./images/contents_img1.jpg" alt="숙소이미지1" >
+                <div class="hiddenbox">
+                    <h1>BOOKSTAY</h1>
+                    <p>북스테이 시집책방은 책과 함께 <br>
+                        사색하며 머물 수 있는 공간입니다.
+                        <br>
+                        <br>
+                        single, double, domitory type <br>
+                    </p>
+                </div>
+                </a>
+            <li><a href="./sub4_bookstore.html">
+                <img src="./images/contents_img2.jpg" alt="숙소이미지2" >
+                <div class="hiddenbox">
+                    
+                    <h1>BOOKSTORE</h1>
+                    <p>북스토어 시집책방은 향긋한 커피와 <br>
+                        책을 구매할 수 있는 서점입니다.  <br>
+                        <br>
+                        시집책방의 공유키친과 북카페를 이용해 보세요. 
+                    </p>
+                    
+                </div>
+                </a>
+            </li>
+            <li><img src="./images/contents_img3.jpg" alt="숙소이미지3" class="off"></li>
+            <li><img src="./images/contents_img4.jpg" alt="숙소이미지4" class="off"></li>
+            <li><a href="./sub4_bookstore.html">
+                <img src="./images/contents_img5.jpg" alt="숙소이미지5" >
+                <div class="hiddenbox">
+                    <h1>BOOKCLUB</h1>
+                    <p>북클럽 시집책방에 가입하여 웰컴키트와 <br>
+                        북모임 초대권, 라운지 이용권을 받아가세요. <br>
+                        <br>
+                        *북클럽 시집책방은 연간회원제입니다.
+                    </p>
+                </div>
+                </a>
+        </ul>
+
+        <div class="textcontents">
+            <div class="textbox">
+                <h1><img src="./images/contents_logo.png" alt="로고"></h1>
+                <p>The greatest thing a human soul ever does <br>
+                    in this world, to see clearly is poetry,<br>
+                    prophecy and religion all in one.
+                </p>
+                <p class="a"><a href="#location">오시는 길</a><a href="./sub2.html">둘러보기</a></p>
+            </div>
+            <div class="door">
+                <img src="./images/contents_icon_backward.jpg.png" alt="앞문">
+                <img src="./images/contents_icon_forward.jpg.png" alt="앞문그림자" class="movingdoor">
+            </div>
+        </div><!--textcontents-->
+    </div>
+
+
+
+
+    <div id="textloop"><!--overflow hidden, width 100%설정해야 함.-->
+        <div class="textwrapper"><!--flex(슬라이드2개), width(슬라이드 2개), animation(@keyframes textloop)-->
+            <div class="slide"><!-- flex, justifycontent: spacearound, width, fontsize 등-->
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+            </div><!--slide-->
+            <div class="slide">
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="집모양"></p>
+                <p>book·stay·store</p>
+                <p>시가 있는 집 책이 있는 방</p>
+                <p><img src="./images/textloop_icon.png" alt="파비콘"> 시집책방 <img src="./images/textloop_icon.png" alt="파비콘"></p>
+                <p>book·stay·store</p>
+            </div><!--slide-->
+        </div><!--textwrapper-->
+    </div><!--#textloop-->
+
+
+<div id="books">
+    <div class="title auto">
+        <img src="./images/title_deco.png" alt="별">
+        <h1>책방의 책들</h1> 
+        <img src="./images/title_deco.png" alt="별">
+    </div>
+
+ 
+    <div class="bookcontents auto">
+            <div class="contents_title"> <h2><b>책방지기</b> <br> PICK</h2>
+            </div>
+        
+            <ul class="auto pick">
+                <li class="text"><a href="#"><img src="./images/article_1.jpg" alt="article1"></a>
+                    <h3>작은 것들을 위한 책</h3>
+                    <h4>유유출판의 모든 것</h4>
+                    <a href="./sub4_bookstore.html">더보기 ></a>
+                </li>
+                <li class="text"><a href="#"><img src="./images/article_2.jpg" alt="article1"></a>
+                    <h3>아무튼, 시리즈</h3>
+                    <h4>좋아하는 것들을 적어보자!</h4>
+                    <a href="./sub4_bookstore.html">더보기 ></a>
+                </li>
+                <li class="text"><a href="#"><img src="./images/article_3.jpg" alt="article1"></a>
+                    <h3>슬플 때 난 춤을 춰</h3>
+                    <h4>작가로 돌아온 김무트</h4>
+                    <a href="./sub4_bookstore.html">더보기 ></a>
+                </li>
+            </ul>
+    </div><!--bookcontents-->
+  
+
+    <div class="bookcontents auto ">
+        <ul class="monthly">
+            <li class="list">
+                <a href="./sub4_bookstore.html"><img src="./images/book1.jpg" alt="이걸 내 마음이라고 하자"></a>
+                <h1>이걸 내 마음이라고 하자</h1>
+                <h3>11,000원<h1>
+            </li>
+            <li class="list">
+                <a href="./sub4_bookstore.html"><img src="./images/book2.jpg" alt="사랑을 위한 되풀이 책표지"></a>
+                <h1>사랑을 위한 되풀이</h1>
+                <h3>11,000원<h1>
+            </li>
+            <li class="list">
+                <a href="./sub4_bookstore.html"><img src="./images/book3.jpg" alt="토마토 컵라면 책표지"></a>
+                <h1>토마토 컵라면</h1>
+                <h3>11,000원<h1>
+            </li>
+        </ul>
+        <div class="contents_title right">
+            <h2><b>이달의</b> <br> 시집</h2>
+        </div>
+    </div>
+</div><!--book-->
+
+    <div id="fixed_bg">
+        <div class="title">
+            <img src="./images/title_icon_orange.png" alt="별">
+            <h1>BOOKCLUB</h1> 
+            <img src="./images/title_icon_orange.png" alt="별">
+        </div>
+    </div>
+
+    <div class="auto bookclub">
+        <div class="contents_title">
+            <h2><b>북클럽</b> <br> 가입안내</h2>
+        </div>
+        <ol>
+            <li>
+                <img src="./images/ol_img1.png" alt="가입안내1">
+                <img src="./images/ol_hover_img1.png" alt="가입안내1" class="hover_img">
+            </li>
+            <li>
+                <img src="./images/ol_img2.png" alt="가입안내2">
+                <img src="./images/ol_hover_img2.png" alt="가입안내2" class="hover_img">
+            </li>
+            <li><img src="./images/ol_img3.png" alt="가입안내3">
+                <img src="./images/ol_hover_img3.png" alt="가입안내3" class="hover_img"></li>
+            <li><img src="./images/ol_img4.png" alt="가입안내4">
+                <img src="./images/ol_hover_img4.png" alt="가입안내4" class="hover_img"></li>
+            <li><img src="./images/ol_img5.png" alt="가입안내5">
+                <img src="./images/ol_hover_img5.png" alt="가입안내5" class="hover_img"></li>
+        </ol>
+        <p class="a"><a href="./sub3_bookclub.html">북클럽 가입하기</a></p>
+    </div><!--bookclub-->
+
+
+    <div id="location"> <!--bg:#012840-->
+        <div class="title auto">
+            <img src="./images/title_icon_orange.png" alt="별모양">
+            <h1>오시는 길</h1> 
+            <img src="./images/title_icon_orange.png" alt="별모양">
+        </div>
+        <div class="location_contents">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.143416478801!2d129.02488597623903!3d35.10312956151328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e99fb4f35065%3A0x9a5170540e170c80!2z67O07IiY64-Z7LGF67Cp6rOo66qp!5e0!3m2!1sko!2skr!4v1713429433732!5m2!1sko!2skr" width="640" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div>
+                <ul>
+                    <li><img src="./images/location1.png" alt="위치"></li>
+                    <li><img src="./images/location2.jpg" alt="위치"></li>
+                    <li class="navi"><img src="./images/location3.jpg" alt="위치">
+                        <p class="a"> <a href="">빠른 길 찾기</a></p>
+                    </li>
+                </ul>
+                
+            </div>
+            <p class="animation"><img src="./images/rotate_img.png" alt="마크"></p>
+        </div>
+
+    </div><!--location-->
+
+
+    <div id="footer">
+        <h1><a href="./index.html"><img src="./images/footer_logo.png" alt="시집책방 로고"></a></h1>
+        <p>북스테이 시집책방 │ bookstay.POETRY</p>
+        <p>tel : 051-621-7117  │  e-mail : te03085@naver.com  │ 부산광역시 중구 대청로 7길</p>
+        <p>  37-55, YONGDUSAN-GIL , JUNG-GU, BUSAN, REPUBLIC OF KOREA</p> 
+    </div>
+
+    <div id="fixer">
+        <ul>
+            <li><a href="#"><img src="./images/fixer_img.png" alt="homeicon"></a></li>
+            <li><a href="./sub2.html" class="list">북스테이</a></li>
+            <li><a href="./sub3_bookclub.html" class="list">북클럽</a></li>
+            <li><a href="./sub4_bookstore.html" class="list">북스토어</a></li>
+        </ul>
+    </div>
+
+    <!-- S : Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".bannerwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay : {Delay : 2000, disableOnInteraction: false,}, 
+        navigation: {
+        nextEl: ".out_btn_next",
+        prevEl: ".out_btn_prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        loop: true
+    });
+    </script>
+    <!-- E : Swiper JS -->
+
+    <!--S : 스크롤 js-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 1800) {
+            $('#fixer').fadeIn();
+        } else {
+            $('#fixer').fadeOut();
+        }
+    });
+   </script>
+   <!--E : 스크롤 JS -->
+</body>
+</html>
