@@ -128,7 +128,7 @@ p.a a:hover {background-color: #012840; color: #fff;}
 
 
 /*textloop*/
-#textloop {background-color: #012840 ; height: 50px;  width: 100%; margin: 60px 0; overflow: hidden; padding: 5px; box-sizing: border-box;}
+#textloop {background-color: #012840 ; height: 50px;  width: 100%; margin-top: 60px; overflow: hidden; padding: 5px; box-sizing: border-box;}
 
 .textwrapper {display: flex; width: 3520px; animation: textloop 20s infinite linear; align-items: flex-end;}
 
@@ -142,7 +142,7 @@ p.a a:hover {background-color: #012840; color: #fff;}
 
 
 /*footer*/
-#footer {background: #fefaf3 url(../images/footer_bg.png) no-repeat center bottom ; height: 342px; text-align: center; margin: 0 auto; padding-top: 160px;}
+#footer {background: #fefaf3 url(../images/sub3/footer_bg.png) no-repeat center bottom ; height: 342px; text-align: center; margin: 0 auto; padding-top: 160px;}
 
 #footer h1 {padding-top: 60px; padding-bottom: 40px;}
 #footer p {padding: 10px;}
