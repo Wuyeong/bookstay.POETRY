@@ -123,7 +123,7 @@ p.a a:hover {background-color: #012840; color: #fff;}
 #fixer ul li:first-child {margin-bottom: 5px;}
 #fixer ul li:nth-child(3) {margin-left: 10px;}
 
-#fixer {mix-blend-mode: difference; display:none;}
+#fixer {mix-blend-mode: difference;-webkit-mix-blend-mode: difference; display:none;}
 
 
 
@@ -142,8 +142,8 @@ p.a a:hover {background-color: #012840; color: #fff;}
 
 
 /*footer*/
-#footer {background: #fefaf3 url(../images/sub3/footer_bg.png) no-repeat center bottom ; height: 342px; text-align: center; margin: 0 auto; padding-top: 160px;}
 
+#footer {background: #fefaf3 url(../images/sub3/footer_bg.jpg) no-repeat center bottom ; height: 342px; text-align: center; margin: 0 auto; padding-top: 160px;}
 #footer h1 {padding-top: 60px; padding-bottom: 40px;}
 #footer p {padding: 10px;}
 
