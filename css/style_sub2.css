@@ -66,9 +66,9 @@ header .search_box {position: absolute;  left: 50%; bottom: 10px ;  transform: t
 
 
 /*mainbanner*/
-#mainbanner {margin: 0 auto; padding-top: 120px; padding-bottom: 350px;}
+#mainbanner {margin: 0 auto; padding-top: 60px; padding-bottom: 350px;}
 #mainbanner .swiper-slide {text-align: center;}
-#mainbanner {background: url(../images/sub2/banner_bg.jpg) no-repeat; background-attachment: fixed ; margin: 0 auto; height: 800px; max-width: 1920px; }
+#mainbanner {background: url(../images/sub2/banner_bg.jpg) no-repeat; background-attachment: fixed ; margin: 0 auto; height: 400px; max-width: 1920px; }
 
 
 /*inputcontainer*/
