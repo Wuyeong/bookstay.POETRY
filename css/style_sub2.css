@@ -151,7 +151,7 @@ input [type=date] { font-size: 20px; height: 16px; border: none;}
 .offerbg3{background: url(../images/sub2/offer_img3.jpg) no-repeat right bottom;}
 .offerbg4{background: url(../images/sub2/offer_img4.jpg) no-repeat right bottom;}
 #special_offers .notice {margin-top: 108px;}
-#special_offers .text_info {height: 300px;}
+#special_offers .text_info {height: 300px; padding: 20px; box-sizing: border-box;}
 
 
 /*textloop*/
