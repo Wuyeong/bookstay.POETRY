@@ -72,7 +72,7 @@ table {background: url(../images/sub3/calender_bg.jpg) no-repeat;}
 
 /*membership*/
 #membership {width: 1320px; margin:0 auto; padding: 100px 0;}
-.swiper-slide {overflow: hidden;}
+.swiper-slide {overflow: hidden; border-radius: 25px;}
 .mySwiper {width: 480px;}
 .swiper-slide img {width: 100%}
 
