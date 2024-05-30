@@ -164,7 +164,11 @@ font-size: 50px; color: #fff; text-shadow: 3px 4px 23px rgba(1, 1, 1, 1);}
 .navi {position: relative;}
 .navi p {position: absolute; bottom: 20px; right: 30px; font-weight: 700;}
 
+.a {display: flex; justify-content: center ;align-items: center;}
+p.a a{border: 1.5px #3a3a3a solid; padding: 10px 15px; box-sizing: border-box; margin:15px 10px; text-align: center; transition: all 0.2s linear;} 
+p.a a:hover {background-color: #012840; color: #fff;}
 
+/*E : location */
 
 /*fixer*/
 #fixer .list {background-color: #fdd2b3;
